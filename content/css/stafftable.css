@@ -1,0 +1,82 @@
+.modalimage {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-size:cover;
+    background-position: top center;
+}
+
+@media screen and (orientation:portrait){
+    .modalimage{
+        min-height: 40vh;
+    }
+}
+@media screen and (orientation:landscape){
+    .modalimage{
+        min-height: 80vh;
+    }
+}
+
+.modalstaff {
+    display: none;
+}
+.modalstaff .row{
+    min-height: 80vh;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 860px){
+    .modalstaff {
+        max-width: 70vw!important;
+        min-height: 80vh;
+    }
+    .modalstaff h2{
+        font-size: 30px!important;
+    }
+    .modalstaff h3{
+        font-size: 22px!important;
+    }
+    .modalstaff h4{
+        font-size: 19px!important;
+    }
+}
+@media only screen and (min-width: 1601px){
+    .modalstaff {
+        max-width: 50vw!important;
+        min-height: 60vh;
+    }
+    .modalstaff h2{
+        font-size: 38px!important;
+    }
+    .modalstaff h3{
+        font-size: 30px!important;
+    }
+    .modalstaff h4{
+        font-size: 20px!important;
+    }
+}
+
+@media only screen and (max-width: 859px) {
+    .modalstaff h2{
+        font-size: 18px!important;
+        margin-top: 26px;
+    }
+    .modalstaff h3{
+        font-size: 16px!important;
+    }
+    .modalstaff h4{
+        font-size: 12px!important;
+    }
+    .modalstaff {
+        max-width: 80vw!important;
+        min-height: 80vh;
+    }
+    .modalimage{
+        margin-top: 10px;
+    }
+}
+.bio{
+    cursor: pointer;
+}
+.bio:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,393 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: ShameimaruSans;
+    src: url('ShameimaruSans.otf');
+}
+
+@font-face {
+    font-family: LucidaGrande;
+    src: url('lucida-grande.otf');
+}
+
+/*@font-face {
+    font-family: FranklinGothicBook;
+    src: url('FranklinGothicBook.ttf');
+}*/
+
+:root {
+    --main-green: #2E4A20;
+    --lightest-green: #698959;
+    --light-green: #415736;
+    --darkest-green: #0F2505;
+    --dark-green: #1E3A11;
+    --main-purple: #3E1B36;
+    --light-purple: #492E43;
+    --lightest-purple: #734B6A;
+}
+
+h1 {
+    font-family: "ShameimaruSans", “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+    text-transform: uppercase;
+    color: var(--main-green);
+}
+
+h2, h5 {
+    font-family: "LucidaGrande", “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+    color: var(--light-green);
+}
+
+h3, h4 {
+    /*font-family: "FranklinGothicBook", “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 29px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .footerslogan {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .bgtext {
+        font-size: 15vh !important;
+        left: 20vw !important;
+    }
+
+    .footerslogan {
+        font-size: 18px;
+    }
+}
+
+/* Universal */
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body * {
+    transition: all .3s;
+}
+
+.container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.full {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fullnav {
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*Footer*/
+
+footer {
+    height: 20vh;
+    font-family: 'Sanchez', sans-serif;
+    font-size: 12px;
+    background-color: white;
+    color: var(--main-green);
+    padding: 25px;
+}
+
+footer a {
+    color: var(--main-green);
+}
+
+footer a:hover {
+    color: var(--lightest-purple);
+}
+
+.social {
+    float: right;
+}
+
+footer h2 {
+    font-size: 12px;
+}
+
+/* Hompage */
+
+.bgimg, .bgimgcom {
+    z-index: -3;
+    position: absolute;
+    opacity: .25;
+}
+
+@media screen and (orientation: portrait) {
+    .bgimg, .bgimgcom {
+        height: 110vw;
+        width: 110vw;
+        top: -20vw;
+        left: -20vw;
+    }
+
+    .homediv {
+        height: 80vh;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .bgimg {
+        height: 90vh;
+        width: 90vh;
+        top: -25vh;
+        right: -25vh;
+    }
+
+    .bgimgcom {
+        height: 110vh;
+        width: 110vh;
+        top: -15vh;
+        right: -15vh;
+    }
+
+    .homediv {
+        height: 40vh;
+    }
+}
+
+#particles-js {
+    background-color: var(--lightest-purple);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.countdown {
+    width: 100vw;
+}
+
+.circle {
+    text-align: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 24vw;
+    border: white 2px solid;
+    color: white;
+    display: inline-block;
+    margin: 2vw;
+}
+
+.circle h1 {
+    margin-top: -15px;
+    font-size: 8vw;
+    color: white
+}
+
+.circle h3 {
+    margin-top: 15px;
+    font-size: 2vw;
+}
+
+.tableinfo {
+    color: white;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+
+.tableinfo h2 {
+    color: white;
+}
+
+.tableinfo div {
+    margin-bottom: 3vh;
+}
+
+.bgtext {
+    color: #ccc;
+    z-index: -4;
+    position: absolute;
+    bottom: -25vh;
+    left: 20vw;
+    font-size: 50vh;
+}
+
+/* Committees */
+.imgunder {
+    z-index: 49;
+}
+
+.gradbox {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5));
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+}
+
+.hovertext {
+    width: calc(100% - 30px);
+    height: 100%;
+    z-index: 51;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s opacity;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.hovertext:hover {
+    text-decoration: none;
+}
+
+.hovertext:hover {
+    opacity: 1.0;
+}
+
+.boxheader {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hovertext h3 {
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .hovertext {
+        opacity: .8;
+    }
+
+    .boxheader {
+        font-size: 4vw;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .hovertext {
+        opacity: 0;
+    }
+
+    .boxheader {
+        font-size: 4vw !important;
+    }
+
+    .hidden-xs {
+        font-size: 1.5vw !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .boxheader {
+        font-size: 48px !important;
+    }
+
+    .hidden-xs {
+        display: block !important;
+    }
+}
+
+.comrow .col-sm {
+    margin-bottom: 30px;
+}
+
+.applybuttonsmall {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: white 3px;
+    border-style: solid;
+    background: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    margin-top: 7px;
+    color: white;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.applybuttonsmall:hover {
+    color: white;
+    background: var(--light-green);
+    text-decoration: none;
+}
+
+.applybuttonsmall:hover h2 {
+    color: white !important;
+}
+.sch{
+    border-radius: 15px;
+    color:white;
+    background-color: var(--main-green);
+    width:100%;
+    padding: 20px;
+    box-sizing: content-box;
+    margin-bottom: 10px;
+}
+.sch h4{
+    margin-bottom: 2px;
+}
